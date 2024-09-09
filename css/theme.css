@@ -1,0 +1,74 @@
+:root {
+    --dark0_x: 46,52,64;
+    --dark0: rgb(var(--dark0_x));
+    --dark1_x: 59,66,82;
+    --dark1: rgb(var(--dark1_x));
+    --dark2_x: 67,76,94;
+    --dark2: rgb(var(--dark2_x));
+    --dark3_x: 76,86,106;
+    --dark3: rgb(var(--dark3_x));
+
+    --light0_x: 216,222,233;
+    --light0: rgb(var(--light0_x));
+    --light1_x: 229,233,240;
+    --light1: rgb(var(--light1_x));
+    --light2_x: 236,239,244;
+    --light2: rgb(var(--light2_x));
+    --light3_x: 255,255,255;
+    --light3: rgb(var(--light3_x));
+
+    --frost1_x: 136,192,208;
+    --frost1: rgb(var(--frost1_x));
+    --orange_x: 208,135,112;
+    --orange: rgb(var(--orange_x));
+}
+
+body {
+    background-color: var(--dark0);
+    color: var(--light2);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--frost1);
+}
+
+a {
+    color: var(--orange);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--frost1);
+}
+
+p {
+    color: var(--light1);
+}
+
+button {
+    background-color: var(--dark2);
+    color: var(--light3);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--dark3);
+}
+
+input, textarea {
+    background-color: var(--dark1);
+    color: var(--light0);
+    border: 1px solid var(--dark2);
+}
+
+input::placeholder, textarea::placeholder {
+    color: var(--light1);
+}
+
+#formattedOutput {
+    background-color: var(--dark1) !important;
+    color: var(--light0);
+    overflow-y: auto;
+}
