@@ -43,6 +43,21 @@
             overflow-y: auto;
             font-family: 'Calibri', sans-serif;
         }
+        
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        table, th, td {
+            border: 1px solid black;
+        }
+
+        th, td {
+            padding: 8px;
+            text-align: left;
+        }
     </style>
 </head>
 <body class="theme-dark">
@@ -54,7 +69,7 @@
     <div id="formattedOutput"></div>
 
     <!-- Подключение библиотеки для преобразования markdown -->
-    <script src="https://cdn.jsdelivr.net/npm/markdown@0.5.0/lib/markdown.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 
     <script>
         // Получаем ссылки на элементы
@@ -64,7 +79,7 @@
         // Обработчик изменения текста
         markdownInput.addEventListener('input', function() {
             const markdownText = markdownInput.value;
-            const htmlContent = markdown.toHTML(markdownText);
+            const htmlContent = marked(markdownText);
             formattedOutput.innerHTML = htmlContent;
         });
     </script>
