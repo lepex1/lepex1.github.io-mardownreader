@@ -1,1 +1,1 @@
-# https://lepex.ru/markdownformatter /
+# https://lepex.ru/markdownformatter
